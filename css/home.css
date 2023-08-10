@@ -1,0 +1,44 @@
+.banners {
+    display: grid;
+
+    grid-template-areas: 
+        "banner1 banner1 banner1 banner1"
+        "banner2 banner3 banner4 banner5"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.banners {
+    height: 100vh;
+}
+
+.banners div:first-of-type {
+    grid-area: banner1;
+    background-image: url("../img/banner-01.jpg");
+}
+
+.banners div:nth-child(2) {
+    grid-area: banner2;
+    background-image: url("../img/banner-02.jpg");
+}
+
+.banners div:nth-child(3) {
+    grid-area: banner3;
+    background-image: url("../img/banner-03.jpg");
+}
+
+.banners div:nth-child(4) {
+    grid-area: banner4;
+    background-image: url("../img/banner-04.jpg");
+}
+
+.banners div:last-of-type {
+    grid-area: banner5;
+    background-image: url("../img/banner-05.jpg");
+}
+
+.banners div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
